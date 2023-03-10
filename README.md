@@ -4,6 +4,7 @@ Search information such as full name and birthday about your favorite kpop idols
 ## How to search
 Enter the kpop idol's **stage name** and then press the Enter key to search.
 
+![Preview of the information displayed about Krystal](/assets/img/preview.png)
 
 ## Idol info
 
