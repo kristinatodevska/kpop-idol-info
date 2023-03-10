@@ -1,0 +1,130 @@
+:root {
+    --dark-purple: rgb(34, 19, 52);
+}
+
+body {
+    background: var(--dark-purple);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-y: scroll;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+#searchbar {
+    background: var(--dark-purple);
+    padding-top: 50px;
+    padding-bottom: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#searchbar p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.blinking-text {
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#search_input {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#search_message span {
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    background: antiquewhite;
+    color: var(--dark-purple);
+    display: block;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    margin: 0 10px 20px;
+    padding: 25px;
+    background: antiquewhite;
+    color: var(--dark-purple);
+    border-radius: 4px;
+    min-width: 300px;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+    z-index: 0;
+}
+
+.card-show {
+    opacity: 1;
+}
+
+.card .card-text {
+    display: block;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.card .card-result {
+    display: inline;
+    font-weight: normal;
+}
+
+.card .card-title h3 {
+    font-size: 1.8em;
+    line-height: 1.4;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+footer {
+    border-top: 1px solid antiquewhite;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
